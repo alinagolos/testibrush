@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JScourses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="header__nav">
+            <a class="logo" href="#">
+              <img src="images/logo.svg" alt="logo"
+            /></a>
+
+            <div class="header__nav-inner">
+              <ul class="header__menu">
+                <li class="header__menu-item header__menu-item--active">
+                  <a class="header__menu-link" href="#">Статьи </a>
+                  <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="#"
+                        >JavaScript Pro
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="#"
+                        >JavaScript для новчиков</a
+                      >
+                    </li>
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="#"
+                        >JavaScript ниндзя</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__menu-item header__menu-item--active">
+                  <a class="header__menu-link" href="#">Курсы</a>
+                  <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="#"
+                        >JavaScript Pro
+                      </a>
+                    </li>
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="#"
+                        >JavaScript для новчиков</a
+                      >
+                    </li>
+                    <li class="header__submenu-item">
+                      <a class="header__submenu-link" href="#"
+                        >JavaScript ниндзя</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#">Новости</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#">О нас</a>
+                </li>
+              </ul>
+              <a class="header__button" href="#header__popup" data-fancybox>
+                Начать учиться
+              </a>
+              <div
+                class="header__popup"
+                id="header__popup"
+                style="display: none"
+              >
+                <h2 class="header__popup-title">Начать учиться</h2>
+                <p class="header__popup-text">
+                  Оставьте заявку и наш менеджер вам перезвонит.
+                </p>
+                <form class="header__popup-form">
+                  <div class="form__wrapper">
+                    <input
+                      class="form__input form__input-popup"
+                      type="text"
+                      required
+                    />
+                    <label class="form__label">Как вас зовут</label>
+                  </div>
+                  <div class="form__wrapper">
+                    <input
+                      class="form__input form__input-popup"
+                      type="text"
+                      required
+                    />
+                    <label class="form__label">Ваш Email</label>
+                  </div>
+                  <button class="header__popup-btn" type="submit">
+                    Отправить
+                  </button>
+                  <p class="header__popup-policy">
+                    Нажимая кнопку «Отправить», вы соглашаетесь с
+                    <a href="#" style="color: #2d1aa7"
+                      >политикой конфиденциальности</a
+                    >
+                  </p>
+                </form>
+              </div>
+            </div>
+            <button class="menu-btn">
+              <img src="images/burger-menu.svg" alt="menu" />
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="banner">
+          <div class="container">
+            <div class="banner__inner">
+              <h1 class="banner__title">Путь JavaScript</h1>
+              <img class="banner__img" src="images/banner.png" alt="image" />
+
+              <div class="banner__scroll">
+                <div class="banner__scroll-inner">
+                  <img
+                    class="banner__scroll-item"
+                    src="images/banner.png"
+                    alt="banner"
+                  />
+                </div>
+              </div>
+              <a class="banner__link" href="#"
+                >Можно выделить три основных направления для прогресса
+                JavaScript
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="citation">
+          <div class="container">
+            <h2 class="citation__title">Серверный JavaScript</h2>
+            <blockquote class="citation__item">
+              <p class="citation__item-text">
+                Разработчики и клиенты часто неправильно понимают, что такое
+                система. Они видят графический интерфейс и думают, что он и есть
+                система. Они определяют систему в терминах графического
+                интерфейса и считают, что должны сразу начать работу с
+                графическим интерфейсом. Они не понимают важнейшего принципа:
+                ввод/вывод не важен.
+              </p>
+              <cite class="citation__item-autor">— Р. Мартин</cite>
+            </blockquote>
+          </div>
+        </section>
+
+        <section class="promo">
+          <div class="container">
+            <div class="promo__inner">
+              <h2 class="promo__title visually-hidden">Реклама</h2>
+              <img class="promo__img" src="images/promo.png" alt="Promo" />
+              <img
+                class="promo__img--mob"
+                src="images/banner-mob.png"
+                alt="Promo"
+              />
+              <p class="promo__text">
+                Реклама на <a class="promo__link" href="#">blabla.com</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="finale">
+          <div class="container">
+            <h2 class="finale__title">Заключение</h2>
+            <p class="finale__text">
+              Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое
+              устройство диссонирует лирический субъект. Абстрактное
+              высказывание пространственно просветляет деструктивный символ.
+              Ямб, несмотря на то, что все эти характерологические черты
+              отсылают не к единому образу нарратора, интегрирует
+              мифопоэтический хронотоп. Действительно, ударение приводит
+              палимпсест. Контрапункт приводит ритм.
+            </p>
+          </div>
+        </section>
+
+        <section class="review">
+          <div class="container">
+            <h2 class="review__title">Что вы думаете об этой книге?</h2>
+            <h3 class="review__title-rating">Оцените статью</h3>
+
+            <svg style="display: none">
+              <symbol
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 25 23"
+                id="star"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.9653 19.4946C12.674 19.3415 12.326 19.3415 12.0347 19.4946L6.35837 22.4788C5.62474 22.8645 4.76731 22.2416 4.90742 21.4247L5.9915 15.104C6.04713 14.7796 5.93959 14.4486 5.7039 14.2189L1.11169 9.7426C0.51817 9.16406 0.845679 8.15609 1.6659 8.0369L8.01218 7.11473C8.33789 7.06741 8.61946 6.86284 8.76512 6.56769L11.6033 0.816987C11.9701 0.0737408 13.0299 0.0737399 13.3967 0.816986L16.2349 6.56769C16.3805 6.86284 16.6621 7.06741 16.9878 7.11473L23.3341 8.0369C24.1543 8.15609 24.4818 9.16406 23.8883 9.7426L19.2961 14.2189C19.0604 14.4486 18.9529 14.7796 19.0085 15.104L20.0926 21.4247C20.2327 22.2416 19.3753 22.8645 18.6416 22.4788L12.9653 19.4946Z"
+                />
+              </symbol>
+            </svg>
+
+            <div class="review__rating">
+              <div class="review__rating-stars">
+                <svg class="icon icon-star" aria-hidden="true">
+                  <use class="review__rating-star" xlink:href="#star"></use>
+                </svg>
+                <svg class="icon icon-star" aria-hidden="true">
+                  <use class="review__rating-star" xlink:href="#star"></use>
+                </svg>
+                <svg class="icon icon-star" aria-hidden="true">
+                  <use class="review__rating-star" xlink:href="#star"></use>
+                </svg>
+                <svg class="icon icon-star" aria-hidden="true">
+                  <use class="review__rating-star" xlink:href="#star"></use>
+                </svg>
+                <svg class="icon icon-star" aria-hidden="true">
+                  <use class="review__rating-star" xlink:href="#star"></use>
+                </svg>
+              </div>
+
+              <div class="review__rating-labels">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="radio_1"
+                  class="review__rating-radio-1"
+                  value="1"
+                />
+                <label for="radio_1">1</label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="radio_2"
+                  class="review__rating-radio-2"
+                  value="2"
+                />
+                <label for="radio_2">2</label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="radio_3"
+                  class="review__rating-radio-3"
+                  value="3"
+                />
+                <label for="radio_3">3</label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="radio_4"
+                  class="review__rating-radio-4"
+                  value="4"
+                />
+                <label for="radio_4">4</label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="radio_5"
+                  class="review__rating-radio-5"
+                  value="5"
+                />
+                <label for="radio_5">5</label>
+
+                <div class="review__rating-stars">
+                  <svg class="icon icon-star icon-star-full" aria-hidden="true">
+                    <use class="review__rating-star" xlink:href="#star"></use>
+                  </svg>
+                  <svg class="icon icon-star icon-star-full" aria-hidden="true">
+                    <use class="review__rating-star" xlink:href="#star"></use>
+                  </svg>
+                  <svg class="icon icon-star icon-star-full" aria-hidden="true">
+                    <use class="review__rating-star" xlink:href="#star"></use>
+                  </svg>
+                  <svg class="icon icon-star icon-star-full" aria-hidden="true">
+                    <use class="review__rating-star" xlink:href="#star"></use>
+                  </svg>
+                  <svg class="icon icon-star icon-star-full" aria-hidden="true">
+                    <use class="review__rating-star" xlink:href="#star"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <form class="review__form">
+              <div class="form__wrapper">
+                <input class="form__input" type="text" required />
+                <label class="form__label">Имя</label>
+              </div>
+              <div class="form__wrapper">
+                <input class="form__input" type="text" required />
+                <label class="form__label">Email</label>
+              </div>
+
+              <div class="review__form-select">
+                <button
+                  class="form__input review__form-input--select"
+                  onclick="return false"
+                >
+                  Выберите книгу
+                </button>
+                <ul class="review__form-select-items">
+                  <li class="review__form-select-item" data-value="ninja">
+                    JavaScript ниндзя
+                  </li>
+                  <li class="review__form-select-item" data-value="guide">
+                    Pragmatic Guide to JavaScript
+                  </li>
+                  <li class="review__form-select-item" data-value="techniques">
+                    Pro JavaScript Techniques
+                  </li>
+                  <li class="review__form-select-item" data-value="javascript">
+                    Выразительный JavaScript
+                  </li>
+                </ul>
+                <input
+                  type="text"
+                  name="select-category"
+                  value=""
+                  class="review__form-input-hidden"
+                />
+              </div>
+
+              <textarea
+                class="review__form-area"
+                placeholder="Ваш отзыв"
+              ></textarea>
+
+              <button class="review__form-btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+        <section class="blog">
+          <div class="container">
+            <h2 class="blog__title">Похожие посты</h2>
+            <ul class="blog__items">
+              <li class="blog__item">
+                <img class="blog__item-img" src="images/1.png" alt="image" />
+                <span class="blog__item-data">12 декабря</span>
+                <a class="blog__item-title" href="#"
+                  >События жизненного цикла ReactJS</a
+                >
+              </li>
+              <li class="blog__item">
+                <img class="blog__item-img" src="images/2.png" alt="image" />
+                <span class="blog__item-data">10 декабря</span>
+                <a class="blog__item-title" href="#"
+                  >CSS Grids. Полное руководство</a
+                >
+              </li>
+              <li class="blog__item">
+                <img class="blog__item-img" src="images/3.png" alt="image" />
+                <span class="blog__item-data">5 декабря</span>
+                <a class="blog__item-title" href="#"
+                  >Асинхронность в JavaScript</a
+                >
+              </li>
+            </ul>
+            <div class="blog__items-swiper">
+              <ul class="blog__items--mobile swiper-wrapper">
+                <li class="blog__item swiper-slide">
+                  <img
+                    class="blog__item-img"
+                    src="images/image1.png"
+                    alt="image"
+                  />
+                  <span class="blog__item-data">12 декабря</span>
+                  <a class="blog__item-title" href="#"
+                    >События жизненного цикла ReactJS</a
+                  >
+                </li>
+                <li class="blog__item swiper-slide">
+                  <img
+                    class="blog__item-img"
+                    src="images/image1.png"
+                    alt="image"
+                  />
+                  <span class="blog__item-data">10 декабря</span>
+                  <a class="blog__item-title" href="#"
+                    >CSS Grids. Полное руководство</a
+                  >
+                </li>
+                <li class="blog__item swiper-slide">
+                  <img
+                    class="blog__item-img"
+                    src="images/image1.png"
+                    alt="image"
+                  />
+                  <span class="blog__item-data">5 декабря</span>
+                  <a class="blog__item-title" href="#"
+                    >Асинхронность в JavaScript</a
+                  >
+                </li>
+              </ul>
+              <div class="blog__swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
